@@ -26,7 +26,7 @@ This project require NodeJS v12.
 Clone this project
 
 ```bash
-> git clone https://github.com/lulukcan/baruluk.git
+> git clone https://github.com/lulukcan/botluluk.git
 > cd baruluk
 ```
 
@@ -47,13 +47,13 @@ Run the Whatsapp bot
 after running it you need to scan the qr
 
 ### Information
-- Change ownerNumber on [this section](https://github.com/lulukcan/baruluk/blob/master/settings/setting.json#L2)
-- Change groupLimit on [this section](https://github.com/lulukcan/baruluk/whatsapp-botz/blob/master/settings/setting.json#L3)
-- Change memberLimit on [this section](https://github.com/lulukcan/baruluk/blob/master/settings/setting.json#L4)
-- Change prefix on [this section](https://github.com/lulukcan/baruluk/blob/master/settings/setting.json#L5)
-- Change menu on [this section](https://github.com/lulukcan/baruluk/blob/master/lib/menu.js#L32)
-- Add kata kasar on [this section](https://github.com/lulukcan/baruluk/blob/master/lib/kataKotor.js#L8)
-- Change all apiKey on [this section](https://github.com/lulukcan/baruluk/blob/master/settings/api.json)
+- Change ownerNumber on [this section](https://github.com/lulukcan/botluluk/blob/master/settings/setting.json#L2)
+- Change groupLimit on [this section](https://github.com/lulukcan/botluluk/whatsapp-botz/blob/master/settings/setting.json#L3)
+- Change memberLimit on [this section](https://github.com/lulukcan/botluluk/blob/master/settings/setting.json#L4)
+- Change prefix on [this section](https://github.com/lulukcan/botluluk/blob/master/settings/setting.json#L5)
+- Change menu on [this section](https://github.com/lulukcan/botluluk/blob/master/lib/menu.js#L32)
+- Add kata kasar on [this section](https://github.com/lulukcan/botluluk/blob/master/lib/kataKotor.js#L8)
+- Change all apiKey on [this section](https://github.com/lulukcan/botluluk/blob/master/settings/api.json)
 - Get Api NoBackground on [this website](https://www.remove.bg/)
 - Get Api ScreenShot on [this website](https://apiflash.com/)
 - Get Api Simi-simi on [this website](https://workshop.simsimi.com/en/), masih limit api simi-siminya? [cek ini](https://github.com/lulukcan/baruluk/issues/38#issuecomment-726981060)
