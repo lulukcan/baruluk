@@ -196,9 +196,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                 const mediaData = await decryptMedia(encryptMedia, uaOverride)
                  pakforlay.reply(from, 'Gw minta tolong bgt kak, tlong difollow ig saya, susahnya follow doang apa? 👊🙁 https://www.instagram.com/bknsr mau difollowback DM saja')
                 const imageBase64 = `data:${_mimetype};base64,${mediaData.toString('base64')}`
-                pakforlay.sendImageAsSticker(from, imageBase64)
-                .then(() => {
-                    pakforlay.reply(from, 'Here\'s your sticker')
+                pakforlay.sendImageAsSticker(from, imageBase64).then(() => {
                     console.log(`Sticker Processed for ${processTime(t, moment())} Second`)
                 })
             } else if (args[0] === 'nobg') {
