@@ -35,7 +35,7 @@ const start = (pakforlay = new Client()) => {
 	    })
 	    } else {
         await pakforlay.simulateTyping(chat.id, true).then(async () => {
-          await pakforlay.sendText(chat.id, `Hai minna~, Im pakforlay BOT. To find out the commands on this bot type ${prefix}menu`)
+          await pakforlay.sendText(chat.id, `Hai minna~, Im LAC BOT. To find out the commands on this bot type ${prefix}menu`)
         })
 	    }
 	}
