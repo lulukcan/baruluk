@@ -22,7 +22,7 @@ const start = (pakforlay = new Client()) => {
 	const groups = await pakforlay.getAllGroups()
 	// kondisi ketika batas group bot telah tercapai,ubah di file settings/setting.json
 	if (groups.length > groupLimit) {
-	await pakforlay.sendText(chat.id, `Sorry, the group on this bot is full\nMax Group is: ${groupLimit}`).then(() => {
+	await pakforlay.sendText(chat.id, `Sorry, the group on this bot is full, jika pengen bot ini masuk group silahkan WA: 089660728860\nMax Group is: ${groupLimit}`).then(() => {
 	      pakforlay.leaveGroup(chat.id)
 	      pakforlay.deleteChat(chat.id)
 	  }) 
@@ -46,17 +46,17 @@ const start = (pakforlay = new Client()) => {
         const host = await pakforlay.getHostNumber() + '@c.us'
         // kondisi ketika seseorang diinvite/join group lewat link
         if (event.action === 'add' && event.who !== host) {
-            await pakforlay.sendTextWithMentions(event.chat, `Hello, Welcome to the group @${event.who.replace('@c.us', '')} \n\nHave fun with us✨`)
+            await pakforlay.sendTextWithMentions(event.chat, `Hello 👏, Welcome to di group ini kaka😇👉 @${event.who.replace('@c.us', '')} 👈\nJangan lupa follow ig saya ya https://instagram.com/bknsr/ ✨`)
         }
         // kondisi ketika seseorang dikick/keluar dari group
         if (event.action === 'remove' && event.who !== host) {
-            await pakforlay.sendTextWithMentions(event.chat, `Good bye @${event.who.replace('@c.us', '')}, We'll miss you✨`)
+            await pakforlay.sendTextWithMentions(event.chat, `Good bye, semoga anda tenang disana & diterima di neraka yaa👍😁 @${event.who.replace('@c.us', '')}, We'll miss you✨`)
         }
     })
 
     pakforlay.onIncomingCall(async (callData) => {
         // ketika seseorang menelpon nomor bot akan mengirim pesan
-        await pakforlay.sendText(callData.peerJid, 'Maaf sedang tidak bisa menerima panggilan.\n\n-bot')
+        await pakforlay.sendText(callData.peerJid, 'Terimakasih anda telah melanggar rulles BoT saya dengan menelfon BoT ini, Anda gw block! 👍.\n\n-BOT LAC 🤖')
         .then(async () => {
             // bot akan memblock nomor itu
             await pakforlay.contactBlock(callData.peerJid)
