@@ -613,7 +613,7 @@ module.exports = HandleMsg = async (pakforlay, message) => {
                 .then(body => {
                     let randomkpop = body.split('\n')
                     let randomkpopx = randomkpop[Math.floor(Math.random() * randomkpop.length)]
-                    pakforlay.sendFileFromUrl(from, randomkpopx, '', 'Nee..', id)
+                    pakforlay.sendFileFromUrl(from, randomkpopx, '', 'Succes kak.! (Jangan Lupa Follow instagram gw 👊🙁 https://www.instagram.com/bknsr)', id)
                 })
                 .catch(() => {
                     pakforlay.reply(from, 'Ada yang Error! (Jangan Lupa Follow instagram gw 👊🙁 https://www.instagram.com/bknsr)', id)
